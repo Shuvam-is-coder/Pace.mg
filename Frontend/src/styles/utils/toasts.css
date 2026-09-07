@@ -1,0 +1,33 @@
+/* ————————————————————————————————————
+   8. TOAST / SNACKBAR
+   ———————————————————————————————————— */
+
+.toast {
+  position: fixed;
+  bottom: var(--pace-space-8);
+  right: var(--pace-space-8);
+  display: flex;
+  align-items: center;
+  gap: var(--pace-space-3);
+  padding: var(--pace-space-3) var(--pace-space-4);
+  background-color: var(--pace-ink-deep);
+  color: var(--pace-paper-base);
+  border: 2px solid var(--pace-ink-deep);
+  border-radius: var(--pace-radius-md);
+  box-shadow: var(--pace-shadow-md);
+  font-family: var(--pace-font-mono);
+  font-size: var(--pace-text-label-md);
+  z-index: var(--pace-z-toast);
+}
+
+.toast-success {
+  background-color: var(--pace-muted-green);
+  border-color: var(--pace-muted-green);
+  color: var(--pace-ink-deep);
+}
+
+.toast-error {
+  background-color: var(--pace-muted-red);
+  border-color: var(--pace-muted-red);
+  color: var(--pace-text-on-primary);
+}

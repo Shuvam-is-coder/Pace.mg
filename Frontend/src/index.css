@@ -1,0 +1,95 @@
+/* Dashboard */
+@import "../src/styles/utils/variables.css";
+@import "../src/styles/components/dashboard.css";
+@import "../src/styles/utils/utilities.css";
+@import "../src/styles/utils/animations.css";
+@import "../src/styles/utils/reset.css";
+@import "../src/styles/components/skeleton_loader.css";
+@import "../src/styles/utils/buttons.css";
+@import "../src/styles/utils/toasts.css";
+@import "../src/styles/utils/inputs.css";
+@import "../src/styles/utils/cards.css";
+@import "../src/styles/utils/badges.css";
+@import "../src/styles/components/font_definition.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: var(--pace-font-display);
+  font-weight: var(--pace-font-weight-avg);
+  font-size: 2rem;
+  background: var(--pace-paper-base);
+
+  /* grid */
+
+  background:
+    linear-gradient(
+        90deg,
+        var(--pace-paper-base)
+          calc(var(--pace-dot-space) - var(--pace-dot-size)),
+        transparent 1%
+      )
+      center / var(--pace-dot-space) var(--pace-dot-space),
+    linear-gradient(
+        var(--pace-paper-base)
+          calc(var(--pace-dot-space) - var(--pace-dot-size)),
+        transparent 1%
+      )
+      center / var(--pace-dot-space) var(--pace-dot-space),
+    var(--pace-grid-dot-color);
+}
+
+/* ------------------------------------ */
+
+.app {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-size: 1rem;
+}
+
+.app .tab-left {
+  min-width: 15%;
+  height: 100vh;
+  background: var(--pace-paper-dark);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-right: 4px solid var(--pace-secondary);
+  padding: 0 0.5rem;
+}
+
+.tab-left .top {
+  display: flex;
+  flex-direction: column;
+}
+
+.children {
+  min-width: 85%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+}
+
+p {
+  font-size: 0.5rem;
+}
+
+.bottom {
+  align-items: flex-end;
+}

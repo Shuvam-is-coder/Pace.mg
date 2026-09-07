@@ -1,0 +1,157 @@
+/* ————————————————————————————————————
+   PACE INPUTS
+   ———————————————————————————————————— */
+
+.input {
+  width: 100%;
+  padding: var(--pace-space-2) var(--pace-space-3);
+  font-family: var(--pace-font-mono);
+  font-size: var(--pace-font-label-medium-size);
+  line-height: 1.5;
+  background-color: var(--pace-paper-dark);
+  border: 2px solid var(--pace-ink-deep);
+  border-radius: var(--pace-radius-md);
+  color: var(--pace-ink-deep);
+  transition: border-color var(--pace-duration-fast) var(--pace-ease-default);
+}
+
+.input::placeholder {
+  color: var(--pace-text-muted);
+}
+
+.input:focus {
+  border-color: var(--pace-secondary);
+  outline: none;
+}
+
+.input:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Input with icon */
+.input-group {
+  position: relative;
+}
+
+.input-group .input {
+  padding-left: var(--pace-space-8);
+}
+
+/* input icon */
+.input-group .input-icon {
+  position: absolute;
+  left: var(--pace-space-3);
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--pace-text-muted);
+  pointer-events: none;
+}
+
+/* Textarea */
+.textarea {
+  width: 100%;
+  padding: var(--pace-space-3);
+  font-family: var(--pace-font-body);
+  font-size: var(--pace-text-body);
+  line-height: var(--pace-lh-relaxed);
+  background-color: var(--pace-paper-dark);
+  border: 2px solid var(--pace-ink-deep);
+  border-radius: var(--pace-radius-md);
+  color: var(--pace-ink-deep);
+  resize: vertical;
+  min-height: 100px;
+}
+
+.textarea:focus {
+  border-color: var(--pace-secondary);
+  outline: none;
+}
+
+/* Select */
+.select {
+  appearance: none;
+  width: 100%;
+  padding: var(--pace-space-2) var(--pace-space-8) var(--pace-space-2)
+    var(--pace-space-3);
+  font-family: var(--pace-font-mono);
+  font-size: var(--pace-text-label-md);
+  background-color: var(--pace-paper-dark);
+  border: 2px solid var(--pace-ink-deep);
+  border-radius: var(--pace-radius-md);
+  color: var(--pace-ink-deep);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%231A1A1B' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  cursor: pointer;
+}
+
+/* Checkbox */
+.checkbox {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--pace-ink-deep);
+  border-radius: var(--pace-radius-sm);
+  background-color: var(--pace-paper-dark);
+  cursor: pointer;
+  accent-color: var(--pace-secondary-container);
+  flex-shrink: 0;
+}
+
+/* Switch */
+.switch {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  width: 44px;
+  height: 24px;
+  background-color: var(--pace-outline-variant);
+  border: 2px solid var(--pace-ink-deep);
+  border-radius: var(--pace-radius-full);
+  cursor: pointer;
+  transition: background-color var(--pace-duration-fast)
+    var(--pace-ease-default);
+}
+
+.switch::after {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  width: 16px;
+  height: 16px;
+  background-color: var(--pace-ink-deep);
+  border-radius: var(--pace-radius-full);
+  transition: transform var(--pace-duration-fast) var(--pace-ease-default);
+}
+
+.switch.active {
+  background-color: var(--pace-secondary-container);
+}
+
+.switch.active::after {
+  transform: translateX(20px);
+  background-color: var(--pace-ink-deep);
+}
+
+/* Label */
+.form-label {
+  display: block;
+  font-family: var(--pace-font-mono);
+  font-size: var(--pace-font-label-medium-size);
+  font-weight: var(--pace-font-weight-max);
+  letter-spacing: var(--pace-ls-wide);
+  text-transform: uppercase;
+  color: var(--pace-ink-deep);
+  margin-bottom: var(--pace-space-2);
+}
+
+/* Error text */
+.form-error {
+  font-family: var(--pace-font-mono);
+  font-size: var(--pace-text-label-md);
+  color: var(--pace-danger);
+  margin-top: var(--pace-space-1);
+}
+
+/* ------------------------------------- */

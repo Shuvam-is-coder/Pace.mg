@@ -1,0 +1,97 @@
+/* ————————————————————————————————————
+   PACE BUTTONS
+   ———————————————————————————————————— */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--pace-space-2);
+  padding: var(--pace-space-2) var(--pace-space-4);
+  font-family: var(--pace-font-mono);
+  font-size: var(--pace-font-label-medium-size);
+  font-weight: var(--pace-font-weight-max);
+  line-height: 1;
+  letter-spacing: var(--pace-ls-wide);
+  text-transform: uppercase;
+  border: 2px solid var(--pace-ink-deep);
+  border-radius: var(--pace-radius-sm);
+  cursor: pointer;
+  user-select: none;
+  transition:
+    transform var(--pace-duration-fast) var(--pace-ease-default),
+    box-shadow var(--pace-duration-fast) var(--pace-ease-default);
+  box-shadow: var(--pace-shadow-sm);
+  white-space: nowrap;
+}
+
+.btn:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px 0px var(--pace-ink-deep);
+}
+
+.btn:active {
+  transform: translate(4px, 4px);
+  box-shadow: none;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: var(--pace-shadow-sm);
+}
+
+/* Primary */
+.btn-primary {
+  background-color: var(--pace-secondary-container);
+  color: var(--pace-ink-deep);
+}
+
+/* Secondary */
+.btn-secondary {
+  background-color: var(--pace-paper-dark);
+  color: var(--pace-ink-deep);
+}
+
+/* Ghost */
+.btn-ghost {
+  background-color: transparent;
+  color: var(--pace-ink-deep);
+  box-shadow: none;
+  border-color: transparent;
+}
+
+.btn-ghost:hover {
+  background-color: var(--pace-surface-variant);
+  box-shadow: none;
+  transform: none;
+}
+
+/* Danger */
+.btn-danger {
+  background-color: var(--pace-muted-red);
+  color: var(--pace-text-on-primary);
+}
+
+/* Icon-only button */
+.btn-icon {
+  padding: var(--pace-space-2);
+  width: 40px;
+  height: 40px;
+  border-radius: var(--pace-radius-full);
+}
+
+.btn-icon-sm {
+  padding: var(--pace-space-1);
+  width: 32px;
+  height: 32px;
+  border-radius: var(--pace-radius-full);
+}
+
+/* Pill variant */
+.btn-pill {
+  border-radius: var(--pace-radius-full);
+}
+
+/* --------------------------------------- */

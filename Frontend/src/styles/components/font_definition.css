@@ -1,0 +1,151 @@
+/* Basic elements of my pace. */
+
+/* Bricolage_Grotesque */
+/*  for heading - use 900
+    for h2 - use 500
+    for h3 - use 300
+*/
+@font-face {
+  font-family: Bricolage_Grotesque;
+  src: url("../../assets/fonts/Bricolage_Grotesque/static/BricolageGrotesque_24pt-Regular.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: Bricolage_Grotesque;
+  src: url("../../assets/fonts/Bricolage_Grotesque/static/BricolageGrotesque-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: Bricolage_Grotesque;
+  src: url("../../assets/fonts/Bricolage_Grotesque/static/BricolageGrotesque_48pt-Bold.ttf");
+  font-weight: 900;
+}
+
+/* Work_Sans */
+/*  for light - use 500
+    for extra light - use 300
+*/
+@font-face {
+  font-family: Work_Sans;
+  src: url("../../assets/fonts/Work_Sans/static/WorkSans-ExtraLight.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Work_Sans;
+  src: url("../../assets/fonts/Work_Sans/static/WorkSans-Light.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Work_Sans;
+  src: url("../../assets/fonts/Work_Sans/static/WorkSans-Regular.ttf");
+  font-weight: 900;
+}
+
+/* JetBrains_Mono */
+/*  for label regular - use 500
+    for label light - use 300
+*/
+
+@font-face {
+  font-family: JetBrains_Mono;
+  src: url("../../assets/fonts/JetBrains_Mono/static/JetBrainsMono-ExtraLight.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: JetBrains_Mono;
+  src: url("../../assets/fonts/JetBrains_Mono/static/JetBrainsMono-Regular.ttf");
+  font-weight: 500;
+}
+
+/* Display
+  Bricolage Grotesque · 56px · 900
+*/
+.display {
+  color: var(--pace-ink-deep);
+  font-family: var(--pace-font-display);
+  font-size: var(--pace-font-display-size);
+  font-weight: var(--pace-font-weight-max);
+}
+
+/* h1 
+  Bricolage Grotesque · 48px · 900
+*/
+
+h1 {
+  font-family: var(--pace-font-display);
+  font-size: var(--pace-font-head1-size);
+  font-weight: var(--pace-font-weight-max);
+}
+
+/* h2
+  Bricolage Grotesque · 32px · 500
+*/
+
+h2 {
+  font-family: var(--pace-font-display);
+  font-size: var(--pace-font-head2-size);
+  font-weight: var(--pace-font-weight-avg);
+}
+
+/* h3
+  Bricolage Grotesque · 24px · 300
+*/
+
+h3 {
+  font-family: var(--pace-font-display);
+  font-size: var(--pace-font-head3-size);
+  font-weight: var(--pace-font-weight-min);
+}
+
+/* .p_large
+  Work Sans · 18px · 500
+*/
+
+.p_large {
+  font-family: var(--pace-font-body);
+  font-size: var(--pace-font-body-large-size);
+  font-weight: var(--pace-font-weight-avg);
+}
+
+/* .p
+  Work Sans · 16px · 500
+*/
+.p {
+  font-family: var(--pace-font-body);
+  font-size: var(--pace-font-body-size);
+  font-weight: var(--pace-font-weight-avg);
+}
+
+/* .label_med
+  JetBrains Mono · 16px · 500
+*/
+
+.label_med {
+  font-family: var(--pace-font-mono);
+  font-size: var(--pace-font-label-medium-size);
+  font-weight: var(--pace-font-weight-avg);
+}
+
+/* .label_small
+  JetBrains Mono · 12px · 300
+*/
+
+.label_small {
+  font-family: var(--pace-font-mono);
+  font-size: var(--pace-font-label-small-size);
+  font-weight: var(--pace-font-weight-avg);
+}
+
+/* .caption
+  Work Sans · 14px · 500
+*/
+
+.caption {
+  color: var(--pace-caption-ink-deep);
+  font-family: var(--pace-font-body);
+  font-size: var(--pace-font-caption-size);
+  font-weight: var(--pace-font-weight-max);
+}

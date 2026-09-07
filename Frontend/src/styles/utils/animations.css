@@ -1,0 +1,216 @@
+/* ============================================================
+   PACE DESIGN SYSTEM — ANIMATIONS & MOTION
+   Playful but controlled. Fast and calm.
+   ============================================================ */
+
+
+/* ————————————————————————————————————
+   1. KEYFRAMES
+   ———————————————————————————————————— */
+
+/* Slide in from bottom */
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Slide in from top */
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Slide in from left */
+@keyframes slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Slide in from right */
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Fade in */
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Scale in (for modals, popovers) */
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Tiny bounce after action */
+@keyframes bounce-settle {
+  0%  { transform: scale(1); }
+  40% { transform: scale(1.12); }
+  60% { transform: scale(0.97); }
+  80% { transform: scale(1.03); }
+  100% { transform: scale(1); }
+}
+
+/* Checkbox squash */
+@keyframes check-squash {
+  0%  { transform: scale(1); }
+  30% { transform: scale(0.8) rotate(-5deg); }
+  60% { transform: scale(1.05) rotate(2deg); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+
+/* Task complete strike */
+@keyframes strike-through {
+  from { width: 0; }
+  to   { width: 100%; }
+}
+
+/* Pulse glow (for focus timer) */
+@keyframes pulse-soft {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0.7; }
+}
+
+/* Skeleton shimmer (imported from components but defined here too) */
+@keyframes shimmer {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Rotate (for loading spinners) */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* Shake (for errors) */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%      { transform: translateX(-4px); }
+  40%      { transform: translateX(4px); }
+  60%      { transform: translateX(-3px); }
+  80%      { transform: translateX(3px); }
+}
+
+/* Sticker pop-in */
+@keyframes sticker-pop {
+  0%   { transform: scale(0) rotate(-15deg); opacity: 0; }
+  60%  { transform: scale(1.15) rotate(3deg); opacity: 1; }
+  80%  { transform: scale(0.95) rotate(-1deg); }
+  100% { transform: scale(1) rotate(0deg); opacity: 1; }
+}
+
+
+/* ————————————————————————————————————
+   2. ANIMATION UTILITY CLASSES
+   ———————————————————————————————————— */
+
+.animate-slide-up {
+  animation: slide-up var(--pace-duration-normal) var(--pace-ease-snap) both;
+}
+
+.animate-slide-down {
+  animation: slide-down var(--pace-duration-normal) var(--pace-ease-snap) both;
+}
+
+.animate-slide-left {
+  animation: slide-in-left var(--pace-duration-normal) var(--pace-ease-snap) both;
+}
+
+.animate-slide-right {
+  animation: slide-in-right var(--pace-duration-normal) var(--pace-ease-snap) both;
+}
+
+.animate-fade-in {
+  animation: fade-in var(--pace-duration-normal) var(--pace-ease-default) both;
+}
+
+.animate-scale-in {
+  animation: scale-in var(--pace-duration-normal) var(--pace-ease-snap) both;
+}
+
+.animate-bounce {
+  animation: bounce-settle var(--pace-duration-slow) var(--pace-ease-bounce);
+}
+
+.animate-check {
+  animation: check-squash var(--pace-duration-slow) var(--pace-ease-bounce);
+}
+
+.animate-shake {
+  animation: shake var(--pace-duration-slow) var(--pace-ease-default);
+}
+
+.animate-sticker {
+  animation: sticker-pop var(--pace-duration-slow) var(--pace-ease-bounce) both;
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+.animate-pulse {
+  animation: pulse-soft 2s ease-in-out infinite;
+}
+
+
+/* ————————————————————————————————————
+   3. STAGGER DELAYS (for lists)
+   ———————————————————————————————————— */
+
+.stagger-1 { animation-delay: 50ms; }
+.stagger-2 { animation-delay: 100ms; }
+.stagger-3 { animation-delay: 150ms; }
+.stagger-4 { animation-delay: 200ms; }
+.stagger-5 { animation-delay: 250ms; }
+.stagger-6 { animation-delay: 300ms; }
+.stagger-7 { animation-delay: 350ms; }
+.stagger-8 { animation-delay: 400ms; }
+
+
+/* ————————————————————————————————————
+   4. REDUCED MOTION
+   ———————————————————————————————————— */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

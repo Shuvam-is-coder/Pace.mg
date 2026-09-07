@@ -1,0 +1,219 @@
+:root {
+  /* dotted grid */
+  --pace-grid-dot-color: #1a1a1b;
+  --pace-dot-size: 1px;
+  --pace-dot-space: 22px;
+
+  /* ————————————————————————————————————
+     1. COLOR SYSTEM — LIGHT MODE
+     ———————————————————————————————————— */
+
+  /* Paper & Background */
+  --pace-bg: #fdf8f8;
+  --pace-paper-base: #f9f7f2;
+  --pace-paper-dark: #f0ede4;
+
+  /* Ink & Primary Text */
+  --pace-ink-deep: #1a1a1b;
+  --pace-primary: #161717;
+  --pace-caption-ink-deep: #1a1a1baf;
+
+  /* Secondary (Muted Orange) */
+  --pace-secondary: #8e4e14;
+  --pace-secondary-variant: #ffb780;
+  --pace-secondary-container: #ffab69;
+
+  /* Accent Palette — Muted / Faded */
+  --pace-muted-yellow: #e9c46a;
+  --pace-muted-green: #8ba888;
+  --pace-muted-red: #e76f51;
+  --pace-dusty-blue: #8ab1bb;
+
+  /* Semantic — Success / Warning / Danger / Info */
+  --pace-success: #8ba888;
+  --pace-warning: #e9c46a;
+  --pace-danger: #e76f51;
+  --pace-info: #8ab1bb;
+  --pace-error: #ba1a1a;
+  --pace-error-container: #ffdad6;
+
+  /* Surface Layers (low → high) */
+  --pace-surface: #fdf8f8;
+  --pace-surface-dim: #ddd9d8;
+  --pace-surface-bright: #fdf8f8;
+  --pace-surface-variant: #e5e2e1;
+  --pace-surface-container-lowest: #ffffff;
+  --pace-surface-container-low: #f7f3f2;
+  --pace-surface-container: #f1edec;
+  --pace-surface-container-high: #ebe7e7;
+  --pace-surface-container-highest: #e5e2e1;
+  --pace-surface-tint: #5f5e5e;
+
+  /* Text Hierarchy */
+  --pace-text-primary: #1c1b1b;
+  --pace-text-secondary: #444748;
+  --pace-text-muted: #747878;
+  --pace-text-on-surface: #1c1b1b;
+  --pace-text-on-primary: #ffffff;
+  --pace-text-on-secondary: #ffffff;
+  --pace-text-on-container: #783d01;
+
+  /* Borders & Outlines */
+  --pace-outline: #747878;
+  --pace-outline-variant: #c4c7c7;
+  --pace-border: var(--pace-ink-deep);
+
+  /* Inverse (for dark elements on light) */
+  --pace-inverse-surface: #313030;
+  --pace-inverse-on-surface: #f4f0ef;
+  --pace-inverse-primary: #c8c6c5;
+
+  /* Primary Fixed (for subtle fills) */
+  --pace-primary-fixed: #e4e2e1;
+  --pace-primary-fixed-dim: #c8c6c5;
+
+  /* Tertiary */
+  --pace-tertiary: #171715;
+  --pace-tertiary-container: #2c2b29;
+
+  /* FONT-FAMILY */
+  --pace-font-display:
+    Bricolage_Grotesque, "Impact", sans-serif; /* used for headings */
+  --pace-font-body: Work_Sans, "Segoe UI", sans-serif; /* used for body */
+  --pace-font-mono: JetBrains_Mono, "Consolas", monospace; /* used for label */
+
+  /* FONT-SIZES */
+  --pace-font-display-size: 56px;
+  --pace-font-head1-size: 48px;
+  --pace-font-head2-size: 32px; /* used with font-weight 500 */
+  --pace-font-head3-size: 24px; /* used with font-weight 300 */
+
+  --pace-font-body-large-size: 18px; /* Work_Sans Light/regular (fow-500/900) */
+  --pace-font-body-size: 16px; /* Work_Sans Light (fow-500) */
+  --pace-font-caption-size: 14px; /* Work_Sans Extra Light (fow-300) */
+
+  --pace-font-label-medium-size: 14px;
+  --pace-font-label-small-size: 12px;
+
+  /* ————————————————————————————————————
+     TYPE SCALE (reference aliases)
+     ———————————————————————————————————— */
+  --pace-text-display: 56px;
+  --pace-text-h1: 48px;
+  --pace-text-h2: 32px;
+  --pace-text-h3: 24px;
+  --pace-text-body-lg: 18px;
+  --pace-text-body: 16px;
+  --pace-text-body-sm: 14px;
+  --pace-text-label-md: 14px;
+  --pace-text-label-sm: 12px;
+  --pace-text-caption: 11px;
+
+  /* ————————————————————————————————————
+     FONT WEIGHT
+     ———————————————————————————————————— */
+  --pace-font-weight-max: 900;
+  --pace-font-weight-avg: 500;
+  --pace-font-weight-min: 300;
+
+  /* ————————————————————————————————————
+     FONT WEIGHT (reference aliases)
+     ———————————————————————————————————— */
+  --pace-fw-light: 300;
+  --pace-fw-regular: 400;
+  --pace-fw-medium: 500;
+  --pace-fw-semibold: 600;
+  --pace-fw-bold: 700;
+  --pace-fw-extrabold: 800;
+
+  /* ————————————————————————————————————
+     BORDER RADIUS
+     ———————————————————————————————————— */
+  --pace-radius-none: 0;
+  --pace-radius-sm: 0.25rem; /* 4px */
+  --pace-radius-md: 0.5rem; /* 8px */
+  --pace-radius-lg: 0.75rem; /* 12px */
+  --pace-radius-xl: 1rem; /* 16px */
+  --pace-radius-full: 9999px;
+
+  /* ————————————————————————————————————
+    BORDERS
+     ———————————————————————————————————— */
+  --pace-border-thin: 1px solid var(--pace-border);
+  --pace-border-chunky: 2px solid var(--pace-border);
+  --pace-border-dashed: 2px dashed var(--pace-outline-variant);
+
+  /* ————————————————————————————————————
+     SHADOWS
+     ———————————————————————————————————— */
+  --pace-shadow-sm: 2px 2px 0px 0px var(--pace-ink-deep);
+  --pace-shadow-md: 4px 4px 0px 0px var(--pace-ink-deep);
+  --pace-shadow-lg: 6px 6px 0px 0px var(--pace-ink-deep);
+  --pace-shadow-none: none;
+
+  /* ————————————————————————————————————
+    SPACING SCALE (4px base)
+  ———————————————————————————————————— */
+  --pace-space-1: 4px;
+  --pace-space-2: 8px;
+  --pace-space-3: 12px;
+  --pace-space-4: 16px;
+  --pace-space-6: 24px;
+  --pace-space-8: 32px;
+  --pace-space-10: 40px;
+  --pace-space-12: 48px;
+  --pace-space-16: 64px;
+
+  /* Semantic spacing aliases */
+  --pace-unit: var(--pace-space-2); /* 8px */
+  --pace-gutter: var(--pace-space-4); /* 16px */
+  --pace-margin-sm: var(--pace-space-4); /* 16px */
+  --pace-margin-md: var(--pace-space-6); /* 24px */
+  --pace-margin-lg: var(--pace-space-10); /* 40px */
+
+  /* Letter Spacing */
+  --pace-ls-tight: -0.02em;
+  --pace-ls-normal: 0em;
+  --pace-ls-wide: 0.05em;
+
+  /* ————————————————————————————————————
+     LINE HEIGHTS
+     ———————————————————————————————————— */
+  --pace-lh-tight: 1.1;
+  --pace-lh-snug: 1.2;
+  --pace-lh-normal: 1.3;
+  --pace-lh-relaxed: 1.5;
+  --pace-lh-loose: 1.6;
+
+  /* ————————————————————————————————————
+    TRANSITIONS & MOTION
+  ———————————————————————————————————— */
+  --pace-ease-default: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --pace-ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --pace-ease-snap: cubic-bezier(0.2, 0, 0, 1);
+
+  --pace-duration-fast: 100ms;
+  --pace-duration-normal: 200ms;
+  --pace-duration-slow: 350ms;
+  --pace-duration-slower: 500ms;
+
+  /* ————————————————————————————————————
+     Z-INDEX SCALE
+     ———————————————————————————————————— */
+  --pace-z-base: 0;
+  --pace-z-dropdown: 10;
+  --pace-z-sticky: 20;
+  --pace-z-overlay: 30;
+  --pace-z-modal: 40;
+  --pace-z-toast: 50;
+  --pace-z-tooltip: 60;
+
+  /* ————————————————————————————————————
+     LAYOUT
+     ———————————————————————————————————— */
+  --pace-sidebar-width: 256px;
+  --pace-header-height: 64px;
+  --pace-mobile-nav-height: 56px;
+  --pace-max-content: 1200px;
+  --pace-max-narrow: 720px;
+}

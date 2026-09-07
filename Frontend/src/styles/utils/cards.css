@@ -1,0 +1,29 @@
+/* ————————————————————————————————————
+   3. CARD
+   ———————————————————————————————————— */
+
+.card {
+  background-color: var(--pace-paper-dark);
+  border: 2px solid var(--pace-ink-deep);
+  border-radius: var(--pace-radius-lg);
+  padding: var(--pace-space-6);
+  position: relative;
+  overflow: hidden;
+}
+
+.card-elevated {
+  background-color: var(--pace-paper-base);
+  box-shadow: var(--pace-shadow-md);
+}
+
+.card-accent {
+  background-color: var(--pace-secondary-container);
+  color: var(--pace-ink-deep);
+}
+
+.card-dashed {
+  border-style: dashed;
+  border-color: var(--pace-outline-variant);
+}
+
+/* --------------------------------------- */
