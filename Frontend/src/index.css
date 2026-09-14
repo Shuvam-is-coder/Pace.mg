@@ -11,6 +11,7 @@
 @import "../src/styles/utils/cards.css";
 @import "../src/styles/utils/badges.css";
 @import "../src/styles/components/font_definition.css";
+@import "../src/styles/components/components.css";
 
 * {
   margin: 0;
@@ -28,7 +29,7 @@ body {
   background: var(--pace-paper-base);
 
   /* grid */
-
+  /* 
   background:
     linear-gradient(
         90deg,
@@ -43,7 +44,7 @@ body {
         transparent 1%
       )
       center / var(--pace-dot-space) var(--pace-dot-space),
-    var(--pace-grid-dot-color);
+    var(--pace-grid-dot-color); */
 }
 
 /* ------------------------------------ */

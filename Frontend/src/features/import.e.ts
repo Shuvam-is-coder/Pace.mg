@@ -9,6 +9,8 @@ import Inbox from "../features/inbox/Inbox";
 import Projects from "../features/projects/Projects";
 import Settings from "../features/settings/Settings";
 import App from "../app/App";
+import Login from "../features/auth/Login";
+import Register from "../features/auth/Register";
 
 export {
   Dashboard,
@@ -22,4 +24,6 @@ export {
   Projects,
   Settings,
   App,
+  Login,
+  Register,
 };

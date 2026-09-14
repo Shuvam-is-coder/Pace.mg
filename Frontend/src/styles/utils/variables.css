@@ -120,11 +120,8 @@
      FONT WEIGHT (reference aliases)
      ———————————————————————————————————— */
   --pace-fw-light: 300;
-  --pace-fw-regular: 400;
   --pace-fw-medium: 500;
-  --pace-fw-semibold: 600;
-  --pace-fw-bold: 700;
-  --pace-fw-extrabold: 800;
+  --pace-fw-extrabold: 900;
 
   /* ————————————————————————————————————
      BORDER RADIUS

@@ -524,3 +524,14 @@
   line-height: var(--pace-lh-relaxed);
   font-weight: var(--pace-fw-regular);
 }
+
+/* ------------------ */
+.text-dusty-blue {
+  --tw-text-opacity: 1;
+  color: rgb(138 177 187 / var(--tw-text-opacity, 1));
+}
+
+.text-muted-green {
+  --text-muted-opacity: 1;
+  color: rgb(139 168 136 / var(--tw-text-opacity, 1));
+}

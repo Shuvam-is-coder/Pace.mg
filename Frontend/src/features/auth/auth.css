@@ -1,0 +1,72 @@
+.login-box,
+.register-box {
+  background: var(--pace-paper-base);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--pace-margin-sm);
+}
+
+.login-box .mid p,
+.register-box .mid p {
+  font-weight: var(--pace-fw-extrabold);
+  padding-inline: var(--pace-margin-md);
+  margin-bottom: var(--pace-unit);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.email-input,
+.password-input,
+.username-input {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pace-unit);
+}
+
+label {
+  font-size: var(--pace-text-label-md);
+  line-height: 1;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+}
+
+a {
+  font-size: var(--pace-font-label-small-size);
+  --tw-text-opacity: 1;
+  color: rgb(68 71 72 / var(--tw-text-opacity, 1));
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  margin-top: var(--pace-unit);
+}
+
+button {
+  color: var(--pace-text-on-container) !important;
+  margin-bottom: var(--pace-unit);
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  --tw-border-opacity: 1;
+  border-top: 2px dashed rgb(26 26 27 / var(--tw-border-opacity, 1));
+  padding-top: var(--pace-space-4);
+}
+
+span {
+  --tw-text-opacity: 1;
+  color: rgb(68 71 72 / var(--tw-text-opacity, 1));
+  font-size: var(--pace-font-body-size);
+}
+
+.register {
+  font-size: var(--pace-font-body-large-size);
+}

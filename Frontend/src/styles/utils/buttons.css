@@ -8,12 +8,12 @@
   justify-content: center;
   gap: var(--pace-space-2);
   padding: var(--pace-space-2) var(--pace-space-4);
-  font-family: var(--pace-font-mono);
-  font-size: var(--pace-font-label-medium-size);
+  /* font-family: var(--pace-font-mono);
+  font-size: var(--pace-font-label-medium-size); */
   font-weight: var(--pace-font-weight-max);
   line-height: 1;
   letter-spacing: var(--pace-ls-wide);
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   border: 2px solid var(--pace-ink-deep);
   border-radius: var(--pace-radius-sm);
   cursor: pointer;
@@ -23,6 +23,8 @@
     box-shadow var(--pace-duration-fast) var(--pace-ease-default);
   box-shadow: var(--pace-shadow-sm);
   white-space: nowrap;
+  font-family: var(--pace-font-display) !important;
+  font-size: var(--pace-font-head3-size) !important;
 }
 
 .btn:hover {

@@ -13,6 +13,8 @@ import {
   Projects,
   Settings,
   App,
+  Login,
+  Register,
 } from '../features/import.e'
 
 
@@ -33,6 +35,14 @@ const router = createBrowserRouter([
             { path: "settings", element: <Settings />},
         ]
     },
+    {
+        path: "/login",
+        element: <Login />
+    },
+    {
+        path: "/register",
+        element: <Register />
+    }
 ])
 
 export default router
