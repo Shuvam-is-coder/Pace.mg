@@ -48,7 +48,7 @@ const Login = () => {
           </form>
           <div className="footer gap-1">
             <span>Don't have an Account</span>
-            <a href="#" className="underline register">Create Account</a>
+            <a href="/register" className="underline register">Create Account</a>
           </div>
         </div>
       </div>

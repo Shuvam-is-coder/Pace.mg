@@ -15,6 +15,7 @@ import {
   App,
   Login,
   Register,
+  Email_verified,
 } from '../features/import.e'
 
 
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
     {
         path: "/register",
         element: <Register />
+    },
+    {
+        path: "/email-verified",
+        element: <Email_verified />
     }
 ])
 

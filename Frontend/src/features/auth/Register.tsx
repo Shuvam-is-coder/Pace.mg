@@ -26,8 +26,8 @@ const Register = () => {
           </div>
           <form>
             <div className="username-input">
-              <label htmlFor="email">Username</label>
-              <input className="input px-4 py-3 rounded-sm" type="email" placeholder="eg. Ryujin"/>
+              <label htmlFor="text">Username</label>
+              <input className="input px-4 py-3 rounded-sm" type="text" placeholder="eg. Ryujin"/>
             </div>
 
             <div className="email-input">
@@ -52,7 +52,7 @@ const Register = () => {
           </form>
           <div className="footer gap-1">
             <span>Don't have an Account</span>
-            <a href="#" className="underline register">Create Account</a>
+            <a href="/login" className="underline register">Create Account</a>
           </div>
         </div>
       </div>

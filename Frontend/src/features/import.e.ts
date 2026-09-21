@@ -11,6 +11,7 @@ import Settings from "../features/settings/Settings";
 import App from "../app/App";
 import Login from "../features/auth/Login";
 import Register from "../features/auth/Register";
+import Email_verified from './utils/Email_verified';
 
 export {
   Dashboard,
@@ -26,4 +27,5 @@ export {
   App,
   Login,
   Register,
+  Email_verified
 };

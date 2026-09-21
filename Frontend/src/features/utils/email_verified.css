@@ -1,0 +1,150 @@
+/* ============================================================
+   PACE — EMAIL VERIFIED (SUCCESS SCREEN)
+   Complements src/index.css + src/styles/*. Only page-specific
+   rules live here, scoped under .email-verified.
+   ============================================================ */
+
+.email-verified {
+  position: relative;
+  overflow: hidden;
+  padding: var(--pace-margin-lg) var(--pace-gutter);
+  background-color: var(--pace-paper-base);
+}
+
+/* Faint dot-grid backdrop (notebook paper feel) */
+.email-verified::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(
+    circle at center,
+    var(--pace-ink-deep) 1px,
+    transparent 1px
+  );
+  background-size: var(--pace-dot-space) var(--pace-dot-space);
+  opacity: 0.06;
+  pointer-events: none;
+}
+
+/* ————————————————————————————————————
+   CARD
+   ———————————————————————————————————— */
+
+.email-verified-box {
+  position: relative;
+  z-index: var(--pace-z-dropdown);
+  width: min(440px, 100%);
+  background: var(--pace-paper-base);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--pace-margin-sm);
+  text-align: center;
+  animation: scale-in var(--pace-duration-slow) var(--pace-ease-bounce) both;
+}
+
+.email-verified-box .top {
+  padding-bottom: var(--pace-margin-sm);
+  border-bottom: 2px dashed var(--pace-outline-variant);
+}
+
+/* Doodle tilts (the auth screens lean on Tailwind rotate utilities) */
+.email-verified-box .doodle-left {
+  transform: rotate(-12deg);
+  opacity: 0.8;
+}
+
+.email-verified-box .doodle-right {
+  transform: rotate(6deg);
+  opacity: 0.8;
+}
+
+/* ————————————————————————————————————
+   SUCCESS SEAL
+   ———————————————————————————————————— */
+
+.email-verified-box .seal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--pace-space-3);
+  margin-top: var(--pace-space-2);
+}
+
+.email-verified-box .seal-badge {
+  width: 96px;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--pace-radius-full);
+  border: 2px solid var(--pace-ink-deep);
+  background-color: var(--pace-muted-green);
+  color: var(--pace-ink-deep);
+  box-shadow: var(--pace-shadow-md);
+}
+
+.email-verified-box .seal-badge svg {
+  width: 44px;
+  height: 44px;
+}
+
+/* Hand-drawn tick that draws itself in */
+.email-verified-box .seal-tick {
+  stroke-dasharray: 40;
+  stroke-dashoffset: 40;
+  animation: tick-draw 500ms var(--pace-ease-snap) 200ms forwards;
+}
+
+@keyframes tick-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* ————————————————————————————————————
+   COPY
+   ———————————————————————————————————— */
+
+.email-verified-box .mid h2 {
+  color: var(--pace-ink-deep);
+  margin-bottom: var(--pace-unit);
+}
+
+.email-verified-box .mid p {
+  font-family: var(--pace-font-body);
+  font-size: var(--pace-text-body);
+  font-weight: var(--pace-font-weight-avg);
+  line-height: var(--pace-lh-relaxed);
+  color: var(--pace-text-secondary);
+  max-width: 34ch;
+  margin-inline: auto;
+}
+
+/* ————————————————————————————————————
+   ACTION + FOOTER
+   ———————————————————————————————————— */
+
+.email-verified-box .verify-btn {
+  width: 100%;
+  margin-top: var(--pace-unit);
+}
+
+.email-verified-box .footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--pace-space-1);
+  border-top: 2px dashed var(--pace-ink-deep);
+  padding-top: var(--pace-space-4);
+}
+
+.email-verified-box .footer span {
+  font-family: var(--pace-font-body);
+  font-size: var(--pace-text-body-sm);
+  color: var(--pace-text-secondary);
+}
+
+.email-verified-box .footer a {
+  font-size: var(--pace-font-body-large-size);
+}
